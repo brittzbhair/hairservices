@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Prices</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+  
+   <a href="index.html" class="logo">
+  <img src="assets/BBLogo.png" alt="BrittzBHair">
+</a>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+  
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="policy.html">Policy</a></li>
+  </ul>
+
+  <a href="policy.html" class="book-btn">BOOK NOW</a>
+</nav>
+
+ <section class="services-page">
+  <div class="services-card">
+    <h2>Service Menu</h2>
+    <center><p class="policy-note">
+  Please review our <a href="policy.html">Booking Policy</a> before scheduling.
+</p></center>
+
+    <!-- FILTER -->
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterServices('braids', this)">BRAIDS</button>
+      <button class="filter-btn" onclick="filterServices('locs', this)">LOCS</button>
+      <button class="filter-btn" onclick="filterServices('natural', this)">NATURAL & CORNROWS</button>
+      <button class="filter-btn" onclick="filterServices('prep', this)">PREP & REMOVAL</button>
+      <button class="filter-btn" onclick="filterServices('special', this)">SPECIAL REQUESTS</button>
+    </div>
+
+    <div class="price-list">
+
+      <!-- ================= BRAIDS ================= -->
+      <div class="price-category braids show">
+
+        <h3>KNOTLESS BRAIDS</h3>
+        <div class="price-item">
+          <span class="service-name">Small</span>
+          <span class="service-price">$5,000 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Smedium/Medium</span>
+          <span class="service-price">$4,000 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Large/XLarge</span>
+          <span class="service-price">$3,500 & UP</span>
+        </div>
+
+        <h3>BOX BRAIDS</h3>
+        <div class="price-item">
+          <span class="service-name">Small</span>
+          <span class="service-price">$3,000 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Large</span>
+          <span class="service-price">$3,500 & UP</span>
+        </div>
+
+        <h3>OTHER BRAIDS</h3>
+        <div class="price-item">
+          <span class="service-name">Fulani</span>
+          <span class="service-price">$5,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Braided Ponytail</span>
+          <span class="service-price">$3,000 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Full Braids Ponytail</span>
+          <span class="service-price">$4,000 & UP</span>
+        </div>
+
+      </div>
+
+      <!-- ================= LOCS ================= -->
+      <div class="price-category locs">
+
+        <h3>LOCS</h3>
+        <div class="price-item">
+          <span class="service-name">Retwist</span>
+          <span class="service-price">$2,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Retwist + Style</span>
+          <span class="service-price">$3,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Starter Locs</span>
+          <span class="service-price">$4,000 & UP</span>
+        </div>
+
+      </div>
+
+      <!-- ================= NATURAL & CORNROWS ================= -->
+      <div class="price-category natural">
+
+        <h3>NATURAL & CORNROWS</h3>
+        <div class="price-item">
+          <span class="service-name">Cornrows (Simple)</span>
+          <span class="service-price">$1,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Cornrows (Styled)</span>
+          <span class="service-price">$2,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Two Strand Twists</span>
+          <span class="service-price">$2,500 & UP</span>
+        </div>
+
+      </div>
+
+      <!-- ================= PREP & REMOVAL ================= -->
+      <div class="price-category prep">
+
+        <h3>PREP & REMOVAL</h3>
+        <div class="price-item">
+          <span class="service-name">Take Down</span>
+          <span class="service-price">$1,500 & UP</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Wash & Blow Dry</span>
+          <span class="service-price">$1,500</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">Detangling</span>
+          <span class="service-price">$1,000 & UP</span>
+        </div>
+
+      </div>
+
+      <!-- ================= SPECIAL REQUESTS ================= -->
+      <div class="price-category special">
+
+        <h3>SPECIAL REQUESTS</h3>
+        <div class="price-item">
+          <span class="service-name">Custom Styles</span>
+          <span class="service-price">Varies</span>
+        </div>
+        <div class="price-item">
+          <span class="service-name">House Calls</span>
+          <span class="service-price">Varies</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+<footer class="footer">
+  <p>© 2026 BrittzBHair. All rights reserved.</p>
+</footer>
+
+ <script src="script.js"></script>
+
+
+</body>
+</html>
